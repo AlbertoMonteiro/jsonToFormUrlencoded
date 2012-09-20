@@ -39,7 +39,7 @@ function jsonToFormUrlencoded(obj, currentLevel) {
 
         }
     }
-    return serialized.substr(0, serialized.length - 1).replace(/\s/g, "+");
+    return serialized.substr(0, serialized.length - 1).replace(/\s/g, "%20");
 }
 
 String.prototype.format = function () {
